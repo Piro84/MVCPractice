@@ -11,13 +11,13 @@ namespace DatabaseActivities.Controllers
         // GET: First
         public ActionResult Index()
         {
-            return View(viewName: "Index", model: "All starts here.");
+            return View(viewName: "Index", model: "Thomas start page");
         }
 
         [HttpPost]
-        public ActionResult SayHello(string inputString)
+        public ActionResult ThomasHello(string inputString)
         {
-            return View(viewName: "Index", model: "Hello " + inputString);
+            return View(viewName: "Index", model: "Thomas says 'Hello " + inputString + "'");
         }
 
     }
