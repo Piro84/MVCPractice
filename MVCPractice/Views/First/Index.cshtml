@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Fun Page for Fun</h2>
+
+<div>
+    <form action="SayHello" method="post">
+        <input name="inputString" value="Name"/>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        @Model
+    </p>
+</div>
