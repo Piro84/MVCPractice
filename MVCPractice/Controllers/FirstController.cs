@@ -34,5 +34,17 @@ namespace MVCPractice.Controllers
             return View(viewName: "Square", model: (square));
         }
 
+        public ActionResult MagicNumber()
+        {
+            MagicNumberModel magicNumber = new MagicNumberModel(0,0);
+            return View(viewName: "MagicNumber", model: magicNumber);
+        }
+
+        [HttpPost]
+        public ActionResult GetMagicNumber(int number1, int number2)
+        {
+            MagicNumberModel magicNumber = new MagicNumberModel(number1, number2);
+            return View(viewName: "MagicNumber", model: (magicNumber));
+        }
     }
 }

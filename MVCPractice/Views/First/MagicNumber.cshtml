@@ -1,0 +1,15 @@
+﻿@model MVCPractice.Models.MagicNumberModel
+@{
+    ViewBag.Title = "MagicNumber";
+}
+
+<h2>MagicNumber</h2>
+
+<form action="GetMagicNumber" method="post">
+    <input name="number1" value="1st Number" type="number" />
+    <input name="number2" value="2nd Number" type="number" />
+    <input name="submit" type="submit" />
+</form>
+<p>
+    Your magic number is: @Model.magicNumber
+</p>
