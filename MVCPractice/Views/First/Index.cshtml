@@ -1,16 +1,17 @@
-﻿@model string
-@{
-    ViewBag.Title = "Index";
-}
+﻿@using MVCPractice.Models
+@model  Employee
+    @{
+        ViewBag.Title = "Index";
+    }
 
-<h2>Index</h2>
-
-<div>
-    <form action="ThomasHello" method="post">
-        <input name="inputString" />
-        <input name="submit" type="submit" />
+<br />
+<br />
+<br />
+    <form action="~/Example/employeeTransfer">
+        <input name="name" />
+        <input name="age" type="number" />
+        <input type="submit" name="submit" />
     </form>
-    <p>
-        @Model
-    </p>
-</div>
+    <p>@Model.name</p>
+    <p>@Model.age</p>
+    

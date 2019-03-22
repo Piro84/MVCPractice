@@ -11,14 +11,16 @@ namespace DatabaseActivities.Controllers
         // GET: First
         public ActionResult Index()
         {
-            return View(viewName: "Index", model: "Thomas start page");
+            MVCPractice.Models.Employee empl = new MVCPractice.Models.Employee();
+            empl.name = "bob";
+            empl.age = 141;
+            return View(viewName: "Index", model: empl);
         }
 
         [HttpPost]
-        public ActionResult ThomasHello(string inputString)
+        public ActionResult EmployeeTransfer(MVCPractice.Models.Employee emp)
         {
-            return View(viewName: "Index", model: "Thomas says 'Hello " + inputString + "'");
+            return View(viewName: "Index", model: emp);
         }
-
     }
 }
