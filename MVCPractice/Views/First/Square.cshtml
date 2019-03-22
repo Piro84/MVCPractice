@@ -1,0 +1,22 @@
+﻿@model MVCPractice.Models.SquareModel
+@{
+    ViewBag.Title = "Square";
+}
+
+<h2>Square</h2>
+
+<div>
+    <form action="SaySquare" method="post">
+        <p>Enter the number to square: <input name="inputNumber" type="number" step="any" /></p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        The square of the input is : @Model.square
+    </p>
+    <p>
+        The square root of the input is : @Model.sqrt
+    </p>
+    <p>
+        The cube of the input is : @Model.cube
+    </p>
+</div>
