@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MagicNumber</title>
+</head>
+<body>
+    <div>
+        <form action="MagicNumberSubmit" method="post">
+            <input name="firstNumber" type="number" placeholder="1st Number" />
+            <input name="secondNumber" type="number" placeholder="2nd Number" />
+            <input name="submit" type="submit" />
+        </form>
+    </div>
+    <p>
+        @Model
+    </p>
+</body>
+</html>

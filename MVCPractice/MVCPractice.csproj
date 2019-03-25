@@ -161,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig3.cs" />
     <Compile Include="Controllers\FirstController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MagicNumberController.cs" />
     <Compile Include="Controllers\NameController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -208,6 +209,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\First\Index.cshtml" />
     <Content Include="Views\Name\Index.cshtml" />
+    <Content Include="Views\MagicNumber\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
