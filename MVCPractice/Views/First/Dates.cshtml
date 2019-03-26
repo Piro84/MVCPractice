@@ -1,0 +1,25 @@
+﻿@model MVCPractice.Models.DateData
+
+@{
+    ViewBag.Title = "Dates";
+}
+
+<h2>Dates</h2>
+<div>
+    <form action="DateMagic" method="post">
+        <p>Enter your birthday: <input name="inputBirthday" type="date" /></p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        Your birthday is: @Model.birthday.ToString()
+    </p>
+    <p>
+        Your age at the next election is: @Model.age
+    </p>
+    <p>
+        Your birthday year is : @Model.year
+    </p>
+    <p>
+        You have lived through @Model.leapYears leap years
+    </p>
+</div>
