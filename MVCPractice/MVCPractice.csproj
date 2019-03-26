@@ -163,6 +163,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MagicNumberController.cs" />
     <Compile Include="Controllers\NameController.cs" />
+    <Compile Include="Controllers\UnitConverterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,6 +211,7 @@
     <Content Include="Views\First\Index.cshtml" />
     <Content Include="Views\Name\Index.cshtml" />
     <Content Include="Views\MagicNumber\Index.cshtml" />
+    <Content Include="Views\UnitConverter\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,39 @@
+﻿@model string
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Thomas and Friend's unit Converter
+        </h1>
+        <form action="Convert" mothod="post">
+            <input type="number" step="any" name="toConvert">
+            <p>From:</p>
+            <select name="UnitIn">
+                <option value="0.001">Milimeter</option>
+                <option value="0.01">Centimeter</option>
+                <option value="0.1">Decameter</option>
+                <option value="1">Meter</option>
+            </select>
+            <p>To:</p>
+            <select name="UnitOutWithComma">
+                <option value="0.001,Milimeter">Milimeter</option>
+                <option value="0.01,Centimeter">Centimeter</option>
+                <option value="0.1,Decameter">Decameter</option>
+                <option value="1,Meter">Meter</option>
+            </select>
+            <input type="submit">
+        </form>
+        @Model
+    </div>
+</body>
+</html>
