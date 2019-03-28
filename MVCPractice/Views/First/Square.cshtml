@@ -1,0 +1,22 @@
+﻿@model double
+
+    @{
+        ViewBag.Title = "Square";
+    }
+
+    <h2>Activity 2 - Square a number.</h2>
+
+    <div>
+        <form action="SaySquare" method="post">
+            <p>Enter the number to square: <input name="inputNumber" type="number" step="any" /> <input name="submit" type="submit" /></p>
+        </form>
+        <form action="SayCube" method="post">
+            <p>Enter the number to cube: <input name="inputNumber" type="number" step="any" /> <input name="submit" type="submit" /></p>
+        </form>
+        <form action="SqrRoot" method="post">
+            <p>Enter the number to square root: <input name="inputNumber" type="number" step="any" /> <input name="submit" type="submit" /></p>
+        </form>
+        <p>
+            The result of the input is : @Model
+        </p>
+    </div>

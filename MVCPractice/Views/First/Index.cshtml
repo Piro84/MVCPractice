@@ -1,0 +1,19 @@
+﻿@model string
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome to your introduction!</h2>
+
+<div>
+    <form action="SayHello" method="post">
+        <p>
+            Enter your name:
+            <input name="inputString" />
+        </p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        @Model
+    </p>
+</div>

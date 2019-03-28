@@ -1,0 +1,20 @@
+﻿@model int
+@{
+    ViewBag.Title = "MagicNumber";
+}
+
+<h2>Activity 3 - Magic Number</h2>
+
+<div>
+    <form action="MagicNumber" method="post">
+        <p>
+            Enter your bounds:
+            <input name="firstNum" type="number" step="any" />
+            <input name="secondNum" type="number" step="any" />
+            <input name="submit" type="submit" />
+        </p>
+    </form>
+    <p>
+        Your random number is : @Model
+    </p>
+</div>
