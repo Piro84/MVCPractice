@@ -203,6 +203,7 @@
     <Content Include="Views\First\Square.cshtml" />
     <Content Include="Views\First\MagicNumber.cshtml" />
     <Content Include="Views\First\Dates.cshtml" />
+    <Content Include="Views\First\UnitConverter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

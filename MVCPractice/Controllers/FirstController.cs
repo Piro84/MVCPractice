@@ -73,6 +73,16 @@ namespace MVCPractice.Controllers
             DateData dateData = new DateData(inputBirthday, age, year, leapYears);
             return View(viewName: "Dates", model: dateData);
         }
+        public ActionResult UnitConverter()
+        {
+            return View(viewName: "UnitConverter", model: 0);
+        }
 
+        [HttpPost]
+        public ActionResult GetConvert(double inches)
+        {
+            double feet = inches / 12;
+            return View(viewName: "UnitConverter", model: (feet));
+        }
     }
 }
