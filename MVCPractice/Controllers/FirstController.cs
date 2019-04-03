@@ -92,6 +92,14 @@ namespace DatabaseActivities.Controllers
             return View(viewName: "Dates", model: ("Your Birthdate: " + birthdate + "\n" + "Age at Next Presidential Election: " + numYears ));
         }
 
+        public ActionResult Convert(double toConvert, String UnitIn, String UnitOut)
+        {
+            Double.TryParse(UnitIn, out double input);
+            Double.TryParse(UnitOut, out double output);
+            toConvert = input * toConvert / output;
+            return View(viewName: "Index", model: toConvert);
+        }
+
 
     }
 }

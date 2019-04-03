@@ -1,19 +1,30 @@
-﻿@model string
-@{
-    ViewBag.Title = "Index";
-}
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css">
+</head>
 
-<h2>Welcome to your introduction!</h2>
-
-<div>
-    <form action="SayHello" method="post">
-        <p>
-            Enter your name:
-            <input name="inputString" />
-        </p>
-        <input name="submit" type="submit" />
-    </form>
-    <p>
+<body>
+    <div>
+        <text class="heading">
+            Thomas and Friend's unit Converter
+        </text>
+        <form action="Convert" mothod="post">
+            <input type="number" step="any" name="toConvert" class="text-box">
+            <p>From:</p>
+            <select name="UnitIn">
+                <option value="0.001">Mili</option>
+                <option value="0.01">Centi</option>
+                <option value="0.1">Deca</option>
+                <option value="1">Meter</option>
+            </select>
+            <p>To:</p>
+            <select name="UnitOut">
+                <option value="0.001">Mili</option>
+                <option value="0.01">Centi</option>
+                <option value="0.1">Deca</option>
+                <option value="1">Meter</option>
+            </select>
+            <input type="submit">
+        </form>
         @Model
-    </p>
-</div>
+    </div>
+</body>
